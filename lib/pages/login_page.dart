@@ -7,8 +7,17 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Center(
-        child: Text("Login Page"),
+        child: Text(
+          "Login Page",
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: newMethod
+          ),
+        ),
       ),
     );
   }
+
+  MaterialAccentColor get newMethod => Colors.redAccent;
 }

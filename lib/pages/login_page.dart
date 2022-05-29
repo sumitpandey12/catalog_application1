@@ -6,18 +6,8 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Center(
-        child: Text(
-          "Login Page",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: newMethod
-          ),
-        ),
-      ),
-    );
+        child: Column(
+      children: [Image.asset("assets/images/login_logo.png")],
+    ));
   }
-
-  MaterialAccentColor get newMethod => Colors.redAccent;
 }
